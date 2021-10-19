@@ -72,7 +72,7 @@ public class HumanoidController : MonoBehaviour
         // 水平方向の速度を求めて Animator Controller のパラメーターに渡す
         Vector3 horizontalVelocity = m_rb.velocity;
         horizontalVelocity.y = 0;
-        m_anim.SetFloat("Speed", horizontalVelocity.magnitude);
+        m_anim.SetFloat("MoveSpeed", horizontalVelocity.magnitude);
     }
 
     /// <summary>
